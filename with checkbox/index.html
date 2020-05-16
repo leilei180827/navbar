@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <script
+      src="https://kit.fontawesome.com/953972f975.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Navbar</div>
+      <label for="btn" class="icon"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="btn1" class="show">
+            Features
+            <i class="fas fa-angle-down"></i>
+          </label>
+          <a href="#">Features</a>
+          <input type="checkbox" id="btn1" />
+          <ul>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Icons</a></li>
+            <li><a href="#">Elements</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn2" class="show">
+            Services
+            <i class="fas fa-angle-down"></i>
+          </label>
+          <a href="#">Services</a>
+          <input type="checkbox" id="btn2" />
+          <ul>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li>
+              <label for="btn3" class="show">
+                Desktop
+                <i class="fas fa-angle-down"></i>
+              </label>
+              <a href="#"
+                >Desktop
+                <i class="fas fa-angle-right"></i>
+              </a>
+              <input type="checkbox" id="btn3" />
+              <ul>
+                <li><a href="#">Submenu-1</a></li>
+                <li><a href="#">Submenu-2</a></li>
+                <li><a href="#">Submenu-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

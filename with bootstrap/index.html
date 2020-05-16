@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/953972f975.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <div class="nav-logo col-6 col-lg-3">Logo</div>
+        <div
+          class="nav-toggle col-md-1 offset-md-4 col-sm-3 offset-sm-3 col-3 offset-3 d-flex d-lg-none"
+        >
+          <div class="nav-toggle-line"></div>
+          <div class="nav-toggle-line"></div>
+          <div class="nav-toggle-line"></div>
+        </div>
+        <div class="nav-modal d-lg-none">
+          <ul class="nav-main-items" id="nav-items">
+            <li><a href="#">Home</a></li>
+            <li class="features">
+              <a href="#"
+                >Features <i class="fas fa-arrow-alt-circle-right"></i
+              ></a>
+            </li>
+            <li class="service">
+              <a href="#"
+                >Service <i class="fas fa-arrow-alt-circle-right"></i
+              ></a>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav-features d-lg-none" id="nav-main-items">
+            <li class="arrow-back">
+              <a href="#"><i class="fas fa-arrow-alt-circle-left"></i>Back</a>
+            </li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Vue</a></li>
+            <li><a href="#">Angular</a></li>
+            <li><a href="#">VanillaJS</a></li>
+          </ul>
+          <ul class="nav-service d-lg-none" id="nav-main-items">
+            <li class="arrow-back">
+              <a href="#"><i class="fas fa-arrow-alt-circle-left"></i>Back</a>
+            </li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Application</a></li>
+            <li class="sub-desktop">
+              <a href="#"
+                >Desktop<i class="fas fa-arrow-alt-circle-right"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav-sub-desktop d-lg-none" id="nav-service">
+            <li class="arrow-back">
+              <a href="#"><i class="fas fa-arrow-alt-circle-left"></i>Back</a>
+            </li>
+            <li><a href="#">Lenovo</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Samsung</a></li>
+          </ul>
+        </div>
+        <div class="nav-item-wrap d-none d-lg-block col-lg-9">
+          <ul class="nav-items row">
+            <li class="nav-item offset-md-1 col-md-2">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a href="#">Features</a>
+              <ul class="nav-sub-items">
+                <li class="nav-sub-item"><a href="#">React</a></li>
+                <li class="nav-sub-item"><a href="#">Vue</a></li>
+                <li class="nav-sub-item"><a href="#">Angular</a></li>
+                <li class="nav-sub-item"><a href="#">VanillaJS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item col-md-2">
+              <a href="#">Service</a>
+              <ul class="nav-sub-items">
+                <li class="nav-sub-item"><a href="#">Mobile</a></li>
+                <li class="nav-sub-item"><a href="#">Application</a></li>
+                <li class="nav-sub-item">
+                  <a href="#">Desktop</a>
+                  <ul class="nav-subSecond-items">
+                    <li class="nav-subSecond-item"><a href="#">Lenovo</a></li>
+                    <li class="nav-subSecond-item"><a href="#">Dell</a></li>
+                    <li class="nav-subSecond-item"><a href="#">Apple</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item col-md-2"><a href="#">Portfolio</a></li>
+            <li class="nav-item col-md-2"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-lg-block">lg displays</div>
+  </body>
+  <script src="./js/navbar.js"></script>
+</html>
