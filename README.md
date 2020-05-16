@@ -1,1 +1,1 @@
-achieve response navbar by different layout tech
+Build responsive navbar by different layout tech
